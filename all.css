@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* img RWD */
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+/* css reset結束 */
+
+.d-flex{
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    width: 940px;
+}
+
+.logo{
+    width: 220px;
+}
+
+.navigation{
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.nav li{
+    color:#3F5D45;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.nav li a{
+    padding: 10px 30px 8px 30px;
+}
+
+.nav .cart{
+    padding-right: 0;
+}
+
+.banner{
+    margin-bottom: 60px;
+}
+
+.categoryItems{
+    color:#EAF0ED;
+    background-color: #3F5D45;
+    font-size: 24px;
+    padding: 16px 102px;
+    line-height: 1.5;
+    width: 300px;
+}
+
+.categoryItem{
+    color:#3F5D45;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 62px;
+    line-height: 1.5;
+    outline: 1px solid #EAF0ED;
+}
+
+.bg-ligntgreen{
+    background-color: #EAF0ED;
+}
+
+.main{
+    justify-content: space-between;
+}
+
+/* 以下為右側甜點品項展示樣式 */
+
+.plusItem{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/p-1.png);
+    height: 315px;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.plusItem02{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/p-2.png);
+}
+
+.plusItem03{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/p-3.png);
+}
+
+.plusItem04{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/p-4.png);
+}
+
+.plusItem05{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/p-5.png);
+}
+
+.plusItem06{
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/student-week1/p-6.png);
+}
+
+.todaySpecial{
+    padding: 10px;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    line-height: 20px;
+}
+
+.today{
+    padding-left: 20px;
+}
+
+.favorite{
+    padding-right: 22px;
+    padding-top: 19px;
+}
+
+.dessertInfo{
+    font-size: 20px;
+    color: #3F5D45;
+    line-height: 28px;
+    border: 1px solid #EAF0ED;
+    border-top: none;
+}
+
+.dessertInfo .title{
+    border-right: 1px solid #EAF0ED;
+    padding: 14px 32px;
+}
+
+.dessertInfo .price{
+    font-weight: bold;
+    padding: 14px 19px 14px 24px;
+}
+
+.toCart{
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 16px 89px;
+    border: 1px solid #EAF0ED;
+    font-weight: bold;
+}
+
+.dessertItems{
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+/* 以下開始分頁 */
+.pagination{
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.pagination li{
+    font-size: 20px;
+    width: 60px;
+    padding: 16px 0;
+    text-align: center;
+    border: 1px solid #EAF0ED;
+    border-right:none ;
+    color: #3F5D45;
+}
+
+.active{
+    background-color: #3F5D45;
+}
+
+.active a{
+    color: #EAF0ED;
+}
+
+.pagination .previousPage{
+    padding: 14px 0;
+}
+
+.pagination .nextPage{
+    padding: 14px 0;
+    border-right: 1px solid #EAF0ED;
+}
+
+.pagination img{
+   margin: auto;
+}
